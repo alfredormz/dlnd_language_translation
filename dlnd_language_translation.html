@@ -12678,11 +12678,11 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Number of Epochs</span>
-<span class="n">epochs</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">epochs</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="c1"># Batch Size</span>
 <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">256</span>
 <span class="c1"># RNN Size</span>
@@ -12690,8 +12690,8 @@ Default GPU Device: /gpu:0
 <span class="c1"># Number of Layers</span>
 <span class="n">num_layers</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="c1"># Embedding Size</span>
-<span class="n">encoding_embedding_size</span> <span class="o">=</span> <span class="mi">25</span>
-<span class="n">decoding_embedding_size</span> <span class="o">=</span> <span class="mi">25</span>
+<span class="n">encoding_embedding_size</span> <span class="o">=</span> <span class="mi">200</span>
+<span class="n">decoding_embedding_size</span> <span class="o">=</span> <span class="mi">200</span>
 <span class="c1"># Learning Rate</span>
 <span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.001</span>
 <span class="c1"># Dropout Keep Probability</span>
@@ -12715,7 +12715,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12785,7 +12785,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12838,7 +12838,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12936,76 +12936,106 @@ Default GPU Device: /gpu:0
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Epoch   0 Batch   50/538 - Train Accuracy: 0.4734, Validation Accuracy: 0.5012, Loss: 2.0204
-Epoch   0 Batch  100/538 - Train Accuracy: 0.5076, Validation Accuracy: 0.5430, Loss: 1.6350
-Epoch   0 Batch  150/538 - Train Accuracy: 0.5352, Validation Accuracy: 0.5662, Loss: 1.3154
-Epoch   0 Batch  200/538 - Train Accuracy: 0.5439, Validation Accuracy: 0.5700, Loss: 1.0624
-Epoch   0 Batch  250/538 - Train Accuracy: 0.5814, Validation Accuracy: 0.6049, Loss: 0.9022
-Epoch   0 Batch  300/538 - Train Accuracy: 0.6185, Validation Accuracy: 0.6301, Loss: 0.7736
-Epoch   0 Batch  350/538 - Train Accuracy: 0.6494, Validation Accuracy: 0.6355, Loss: 0.6879
-Epoch   0 Batch  400/538 - Train Accuracy: 0.6579, Validation Accuracy: 0.6779, Loss: 0.5747
-Epoch   0 Batch  450/538 - Train Accuracy: 0.7108, Validation Accuracy: 0.7001, Loss: 0.5089
-Epoch   0 Batch  500/538 - Train Accuracy: 0.7779, Validation Accuracy: 0.7576, Loss: 0.3595
-Epoch   1 Batch   50/538 - Train Accuracy: 0.8217, Validation Accuracy: 0.8134, Loss: 0.2705
-Epoch   1 Batch  100/538 - Train Accuracy: 0.8484, Validation Accuracy: 0.8271, Loss: 0.2152
-Epoch   1 Batch  150/538 - Train Accuracy: 0.8703, Validation Accuracy: 0.8507, Loss: 0.1806
-Epoch   1 Batch  200/538 - Train Accuracy: 0.8824, Validation Accuracy: 0.8432, Loss: 0.1539
-Epoch   1 Batch  250/538 - Train Accuracy: 0.9098, Validation Accuracy: 0.8612, Loss: 0.1373
-Epoch   1 Batch  300/538 - Train Accuracy: 0.8850, Validation Accuracy: 0.8967, Loss: 0.1269
-Epoch   1 Batch  350/538 - Train Accuracy: 0.9092, Validation Accuracy: 0.9119, Loss: 0.1216
-Epoch   1 Batch  400/538 - Train Accuracy: 0.9031, Validation Accuracy: 0.9057, Loss: 0.1060
-Epoch   1 Batch  450/538 - Train Accuracy: 0.9129, Validation Accuracy: 0.9233, Loss: 0.1072
-Epoch   1 Batch  500/538 - Train Accuracy: 0.9320, Validation Accuracy: 0.9178, Loss: 0.0672
-Epoch   2 Batch   50/538 - Train Accuracy: 0.9314, Validation Accuracy: 0.9118, Loss: 0.0647
-Epoch   2 Batch  100/538 - Train Accuracy: 0.9268, Validation Accuracy: 0.9458, Loss: 0.0576
-Epoch   2 Batch  150/538 - Train Accuracy: 0.9455, Validation Accuracy: 0.9226, Loss: 0.0563
-Epoch   2 Batch  200/538 - Train Accuracy: 0.9361, Validation Accuracy: 0.9288, Loss: 0.0563
-Epoch   2 Batch  250/538 - Train Accuracy: 0.9492, Validation Accuracy: 0.9215, Loss: 0.0535
-Epoch   2 Batch  300/538 - Train Accuracy: 0.9403, Validation Accuracy: 0.9395, Loss: 0.0502
-Epoch   2 Batch  350/538 - Train Accuracy: 0.9483, Validation Accuracy: 0.9442, Loss: 0.0552
-Epoch   2 Batch  400/538 - Train Accuracy: 0.9537, Validation Accuracy: 0.9473, Loss: 0.0518
-Epoch   2 Batch  450/538 - Train Accuracy: 0.9485, Validation Accuracy: 0.9510, Loss: 0.0547
-Epoch   2 Batch  500/538 - Train Accuracy: 0.9741, Validation Accuracy: 0.9393, Loss: 0.0337
-Epoch   3 Batch   50/538 - Train Accuracy: 0.9535, Validation Accuracy: 0.9453, Loss: 0.0402
-Epoch   3 Batch  100/538 - Train Accuracy: 0.9660, Validation Accuracy: 0.9544, Loss: 0.0347
-Epoch   3 Batch  150/538 - Train Accuracy: 0.9490, Validation Accuracy: 0.9542, Loss: 0.0367
-Epoch   3 Batch  200/538 - Train Accuracy: 0.9557, Validation Accuracy: 0.9396, Loss: 0.0313
-Epoch   3 Batch  250/538 - Train Accuracy: 0.9600, Validation Accuracy: 0.9371, Loss: 0.0379
-Epoch   3 Batch  300/538 - Train Accuracy: 0.9619, Validation Accuracy: 0.9576, Loss: 0.0339
-Epoch   3 Batch  350/538 - Train Accuracy: 0.9660, Validation Accuracy: 0.9489, Loss: 0.0410
-Epoch   3 Batch  400/538 - Train Accuracy: 0.9781, Validation Accuracy: 0.9377, Loss: 0.0330
-Epoch   3 Batch  450/538 - Train Accuracy: 0.9509, Validation Accuracy: 0.9563, Loss: 0.0445
-Epoch   3 Batch  500/538 - Train Accuracy: 0.9837, Validation Accuracy: 0.9450, Loss: 0.0244
-Epoch   4 Batch   50/538 - Train Accuracy: 0.9598, Validation Accuracy: 0.9480, Loss: 0.0295
-Epoch   4 Batch  100/538 - Train Accuracy: 0.9756, Validation Accuracy: 0.9682, Loss: 0.0211
-Epoch   4 Batch  150/538 - Train Accuracy: 0.9582, Validation Accuracy: 0.9602, Loss: 0.0277
-Epoch   4 Batch  200/538 - Train Accuracy: 0.9686, Validation Accuracy: 0.9462, Loss: 0.0388
-Epoch   4 Batch  250/538 - Train Accuracy: 0.9590, Validation Accuracy: 0.9544, Loss: 0.0297
-Epoch   4 Batch  300/538 - Train Accuracy: 0.9821, Validation Accuracy: 0.9593, Loss: 0.0227
-Epoch   4 Batch  350/538 - Train Accuracy: 0.9682, Validation Accuracy: 0.9659, Loss: 0.0284
-Epoch   4 Batch  400/538 - Train Accuracy: 0.9727, Validation Accuracy: 0.9648, Loss: 0.0244
-Epoch   4 Batch  450/538 - Train Accuracy: 0.9608, Validation Accuracy: 0.9609, Loss: 0.0355
-Epoch   4 Batch  500/538 - Train Accuracy: 0.9808, Validation Accuracy: 0.9485, Loss: 0.0141
-Epoch   5 Batch   50/538 - Train Accuracy: 0.9643, Validation Accuracy: 0.9700, Loss: 0.0195
-Epoch   5 Batch  100/538 - Train Accuracy: 0.9871, Validation Accuracy: 0.9627, Loss: 0.0188
-Epoch   5 Batch  150/538 - Train Accuracy: 0.9695, Validation Accuracy: 0.9606, Loss: 0.0201
-Epoch   5 Batch  200/538 - Train Accuracy: 0.9768, Validation Accuracy: 0.9574, Loss: 0.0180
-Epoch   5 Batch  250/538 - Train Accuracy: 0.9809, Validation Accuracy: 0.9613, Loss: 0.0244
-Epoch   5 Batch  300/538 - Train Accuracy: 0.9777, Validation Accuracy: 0.9602, Loss: 0.0203
-Epoch   5 Batch  350/538 - Train Accuracy: 0.9749, Validation Accuracy: 0.9684, Loss: 0.0214
-Epoch   5 Batch  400/538 - Train Accuracy: 0.9767, Validation Accuracy: 0.9743, Loss: 0.0195
-Epoch   5 Batch  450/538 - Train Accuracy: 0.9593, Validation Accuracy: 0.9696, Loss: 0.0262
-Epoch   5 Batch  500/538 - Train Accuracy: 0.9794, Validation Accuracy: 0.9600, Loss: 0.0123
-Epoch   6 Batch   50/538 - Train Accuracy: 0.9787, Validation Accuracy: 0.9569, Loss: 0.0198
-Epoch   6 Batch  100/538 - Train Accuracy: 0.9820, Validation Accuracy: 0.9732, Loss: 0.0152
-Epoch   6 Batch  150/538 - Train Accuracy: 0.9732, Validation Accuracy: 0.9606, Loss: 0.0190
-Epoch   6 Batch  200/538 - Train Accuracy: 0.9816, Validation Accuracy: 0.9657, Loss: 0.0149
-Epoch   6 Batch  250/538 - Train Accuracy: 0.9686, Validation Accuracy: 0.9684, Loss: 0.0208
-Epoch   6 Batch  300/538 - Train Accuracy: 0.9834, Validation Accuracy: 0.9659, Loss: 0.0175
-Epoch   6 Batch  350/538 - Train Accuracy: 0.9734, Validation Accuracy: 0.9709, Loss: 0.0219
-Epoch   6 Batch  400/538 - Train Accuracy: 0.9833, Validation Accuracy: 0.9728, Loss: 0.0175
-Epoch   6 Batch  450/538 - Train Accuracy: 0.9701, Validation Accuracy: 0.9592, Loss: 0.0251
-Epoch   6 Batch  500/538 - Train Accuracy: 0.9945, Validation Accuracy: 0.9595, Loss: 0.0132
+<pre>Epoch   0 Batch   50/538 - Train Accuracy: 0.4547, Validation Accuracy: 0.5037, Loss: 1.7503
+Epoch   0 Batch  100/538 - Train Accuracy: 0.5381, Validation Accuracy: 0.5595, Loss: 1.1498
+Epoch   0 Batch  150/538 - Train Accuracy: 0.5900, Validation Accuracy: 0.5758, Loss: 0.8402
+Epoch   0 Batch  200/538 - Train Accuracy: 0.6283, Validation Accuracy: 0.6190, Loss: 0.6666
+Epoch   0 Batch  250/538 - Train Accuracy: 0.6443, Validation Accuracy: 0.6474, Loss: 0.5728
+Epoch   0 Batch  300/538 - Train Accuracy: 0.7033, Validation Accuracy: 0.6831, Loss: 0.4723
+Epoch   0 Batch  350/538 - Train Accuracy: 0.7658, Validation Accuracy: 0.7544, Loss: 0.3547
+Epoch   0 Batch  400/538 - Train Accuracy: 0.8155, Validation Accuracy: 0.8176, Loss: 0.2557
+Epoch   0 Batch  450/538 - Train Accuracy: 0.8590, Validation Accuracy: 0.8457, Loss: 0.1969
+Epoch   0 Batch  500/538 - Train Accuracy: 0.9032, Validation Accuracy: 0.8720, Loss: 0.1161
+Epoch   1 Batch   50/538 - Train Accuracy: 0.9008, Validation Accuracy: 0.9119, Loss: 0.0916
+Epoch   1 Batch  100/538 - Train Accuracy: 0.9275, Validation Accuracy: 0.9029, Loss: 0.0798
+Epoch   1 Batch  150/538 - Train Accuracy: 0.9342, Validation Accuracy: 0.9150, Loss: 0.0665
+Epoch   1 Batch  200/538 - Train Accuracy: 0.9479, Validation Accuracy: 0.9212, Loss: 0.0555
+Epoch   1 Batch  250/538 - Train Accuracy: 0.9422, Validation Accuracy: 0.9245, Loss: 0.0554
+Epoch   1 Batch  300/538 - Train Accuracy: 0.9384, Validation Accuracy: 0.9416, Loss: 0.0566
+Epoch   1 Batch  350/538 - Train Accuracy: 0.9418, Validation Accuracy: 0.9373, Loss: 0.0626
+Epoch   1 Batch  400/538 - Train Accuracy: 0.9397, Validation Accuracy: 0.9370, Loss: 0.0496
+Epoch   1 Batch  450/538 - Train Accuracy: 0.9310, Validation Accuracy: 0.9531, Loss: 0.0606
+Epoch   1 Batch  500/538 - Train Accuracy: 0.9588, Validation Accuracy: 0.9299, Loss: 0.0308
+Epoch   2 Batch   50/538 - Train Accuracy: 0.9516, Validation Accuracy: 0.9421, Loss: 0.0360
+Epoch   2 Batch  100/538 - Train Accuracy: 0.9594, Validation Accuracy: 0.9393, Loss: 0.0330
+Epoch   2 Batch  150/538 - Train Accuracy: 0.9688, Validation Accuracy: 0.9492, Loss: 0.0278
+Epoch   2 Batch  200/538 - Train Accuracy: 0.9623, Validation Accuracy: 0.9430, Loss: 0.0260
+Epoch   2 Batch  250/538 - Train Accuracy: 0.9674, Validation Accuracy: 0.9430, Loss: 0.0335
+Epoch   2 Batch  300/538 - Train Accuracy: 0.9440, Validation Accuracy: 0.9485, Loss: 0.0322
+Epoch   2 Batch  350/538 - Train Accuracy: 0.9652, Validation Accuracy: 0.9624, Loss: 0.0367
+Epoch   2 Batch  400/538 - Train Accuracy: 0.9628, Validation Accuracy: 0.9581, Loss: 0.0297
+Epoch   2 Batch  450/538 - Train Accuracy: 0.9552, Validation Accuracy: 0.9643, Loss: 0.0345
+Epoch   2 Batch  500/538 - Train Accuracy: 0.9783, Validation Accuracy: 0.9524, Loss: 0.0175
+Epoch   3 Batch   50/538 - Train Accuracy: 0.9678, Validation Accuracy: 0.9629, Loss: 0.0250
+Epoch   3 Batch  100/538 - Train Accuracy: 0.9863, Validation Accuracy: 0.9638, Loss: 0.0224
+Epoch   3 Batch  150/538 - Train Accuracy: 0.9861, Validation Accuracy: 0.9700, Loss: 0.0201
+Epoch   3 Batch  200/538 - Train Accuracy: 0.9711, Validation Accuracy: 0.9672, Loss: 0.0190
+Epoch   3 Batch  250/538 - Train Accuracy: 0.9785, Validation Accuracy: 0.9632, Loss: 0.0233
+Epoch   3 Batch  300/538 - Train Accuracy: 0.9751, Validation Accuracy: 0.9634, Loss: 0.0220
+Epoch   3 Batch  350/538 - Train Accuracy: 0.9715, Validation Accuracy: 0.9611, Loss: 0.0252
+Epoch   3 Batch  400/538 - Train Accuracy: 0.9816, Validation Accuracy: 0.9773, Loss: 0.0208
+Epoch   3 Batch  450/538 - Train Accuracy: 0.9753, Validation Accuracy: 0.9719, Loss: 0.0284
+Epoch   3 Batch  500/538 - Train Accuracy: 0.9897, Validation Accuracy: 0.9688, Loss: 0.0129
+Epoch   4 Batch   50/538 - Train Accuracy: 0.9771, Validation Accuracy: 0.9645, Loss: 0.0189
+Epoch   4 Batch  100/538 - Train Accuracy: 0.9820, Validation Accuracy: 0.9773, Loss: 0.0137
+Epoch   4 Batch  150/538 - Train Accuracy: 0.9822, Validation Accuracy: 0.9640, Loss: 0.0174
+Epoch   4 Batch  200/538 - Train Accuracy: 0.9795, Validation Accuracy: 0.9727, Loss: 0.0175
+Epoch   4 Batch  250/538 - Train Accuracy: 0.9811, Validation Accuracy: 0.9686, Loss: 0.0178
+Epoch   4 Batch  300/538 - Train Accuracy: 0.9725, Validation Accuracy: 0.9712, Loss: 0.0169
+Epoch   4 Batch  350/538 - Train Accuracy: 0.9665, Validation Accuracy: 0.9757, Loss: 0.0214
+Epoch   4 Batch  400/538 - Train Accuracy: 0.9851, Validation Accuracy: 0.9817, Loss: 0.0160
+Epoch   4 Batch  450/538 - Train Accuracy: 0.9652, Validation Accuracy: 0.9732, Loss: 0.0226
+Epoch   4 Batch  500/538 - Train Accuracy: 0.9906, Validation Accuracy: 0.9741, Loss: 0.0092
+Epoch   5 Batch   50/538 - Train Accuracy: 0.9789, Validation Accuracy: 0.9680, Loss: 0.0166
+Epoch   5 Batch  100/538 - Train Accuracy: 0.9936, Validation Accuracy: 0.9734, Loss: 0.0102
+Epoch   5 Batch  150/538 - Train Accuracy: 0.9883, Validation Accuracy: 0.9632, Loss: 0.0123
+Epoch   5 Batch  200/538 - Train Accuracy: 0.9820, Validation Accuracy: 0.9732, Loss: 0.0119
+Epoch   5 Batch  250/538 - Train Accuracy: 0.9824, Validation Accuracy: 0.9682, Loss: 0.0200
+Epoch   5 Batch  300/538 - Train Accuracy: 0.9816, Validation Accuracy: 0.9773, Loss: 0.0147
+Epoch   5 Batch  350/538 - Train Accuracy: 0.9786, Validation Accuracy: 0.9723, Loss: 0.0172
+Epoch   5 Batch  400/538 - Train Accuracy: 0.9900, Validation Accuracy: 0.9782, Loss: 0.0139
+Epoch   5 Batch  450/538 - Train Accuracy: 0.9714, Validation Accuracy: 0.9851, Loss: 0.0182
+Epoch   5 Batch  500/538 - Train Accuracy: 0.9922, Validation Accuracy: 0.9773, Loss: 0.0098
+Epoch   6 Batch   50/538 - Train Accuracy: 0.9744, Validation Accuracy: 0.9746, Loss: 0.0122
+Epoch   6 Batch  100/538 - Train Accuracy: 0.9879, Validation Accuracy: 0.9837, Loss: 0.0084
+Epoch   6 Batch  150/538 - Train Accuracy: 0.9885, Validation Accuracy: 0.9776, Loss: 0.0109
+Epoch   6 Batch  200/538 - Train Accuracy: 0.9840, Validation Accuracy: 0.9730, Loss: 0.0112
+Epoch   6 Batch  250/538 - Train Accuracy: 0.9844, Validation Accuracy: 0.9719, Loss: 0.0144
+Epoch   6 Batch  300/538 - Train Accuracy: 0.9879, Validation Accuracy: 0.9737, Loss: 0.0111
+Epoch   6 Batch  350/538 - Train Accuracy: 0.9777, Validation Accuracy: 0.9727, Loss: 0.0134
+Epoch   6 Batch  400/538 - Train Accuracy: 0.9864, Validation Accuracy: 0.9783, Loss: 0.0113
+Epoch   6 Batch  450/538 - Train Accuracy: 0.9725, Validation Accuracy: 0.9814, Loss: 0.0200
+Epoch   6 Batch  500/538 - Train Accuracy: 0.9947, Validation Accuracy: 0.9682, Loss: 0.0076
+Epoch   7 Batch   50/538 - Train Accuracy: 0.9822, Validation Accuracy: 0.9830, Loss: 0.0121
+Epoch   7 Batch  100/538 - Train Accuracy: 0.9906, Validation Accuracy: 0.9844, Loss: 0.0068
+Epoch   7 Batch  150/538 - Train Accuracy: 0.9863, Validation Accuracy: 0.9764, Loss: 0.0114
+Epoch   7 Batch  200/538 - Train Accuracy: 0.9873, Validation Accuracy: 0.9799, Loss: 0.0093
+Epoch   7 Batch  250/538 - Train Accuracy: 0.9910, Validation Accuracy: 0.9735, Loss: 0.0087
+Epoch   7 Batch  300/538 - Train Accuracy: 0.9847, Validation Accuracy: 0.9831, Loss: 0.0134
+Epoch   7 Batch  350/538 - Train Accuracy: 0.9903, Validation Accuracy: 0.9734, Loss: 0.0129
+Epoch   7 Batch  400/538 - Train Accuracy: 0.9935, Validation Accuracy: 0.9760, Loss: 0.0101
+Epoch   7 Batch  450/538 - Train Accuracy: 0.9788, Validation Accuracy: 0.9814, Loss: 0.0175
+Epoch   7 Batch  500/538 - Train Accuracy: 0.9972, Validation Accuracy: 0.9739, Loss: 0.0070
+Epoch   8 Batch   50/538 - Train Accuracy: 0.9869, Validation Accuracy: 0.9771, Loss: 0.0104
+Epoch   8 Batch  100/538 - Train Accuracy: 0.9949, Validation Accuracy: 0.9869, Loss: 0.0071
+Epoch   8 Batch  150/538 - Train Accuracy: 0.9902, Validation Accuracy: 0.9741, Loss: 0.0090
+Epoch   8 Batch  200/538 - Train Accuracy: 0.9875, Validation Accuracy: 0.9824, Loss: 0.0093
+Epoch   8 Batch  250/538 - Train Accuracy: 0.9941, Validation Accuracy: 0.9794, Loss: 0.0091
+Epoch   8 Batch  300/538 - Train Accuracy: 0.9903, Validation Accuracy: 0.9790, Loss: 0.0129
+Epoch   8 Batch  350/538 - Train Accuracy: 0.9814, Validation Accuracy: 0.9689, Loss: 0.0126
+Epoch   8 Batch  400/538 - Train Accuracy: 0.9931, Validation Accuracy: 0.9780, Loss: 0.0109
+Epoch   8 Batch  450/538 - Train Accuracy: 0.9820, Validation Accuracy: 0.9792, Loss: 0.0131
+Epoch   8 Batch  500/538 - Train Accuracy: 0.9968, Validation Accuracy: 0.9746, Loss: 0.0072
+Epoch   9 Batch   50/538 - Train Accuracy: 0.9840, Validation Accuracy: 0.9794, Loss: 0.0091
+Epoch   9 Batch  100/538 - Train Accuracy: 0.9883, Validation Accuracy: 0.9753, Loss: 0.0082
+Epoch   9 Batch  150/538 - Train Accuracy: 0.9941, Validation Accuracy: 0.9805, Loss: 0.0087
+Epoch   9 Batch  200/538 - Train Accuracy: 0.9920, Validation Accuracy: 0.9751, Loss: 0.0070
+Epoch   9 Batch  250/538 - Train Accuracy: 0.9898, Validation Accuracy: 0.9783, Loss: 0.0083
+Epoch   9 Batch  300/538 - Train Accuracy: 0.9931, Validation Accuracy: 0.9812, Loss: 0.0097
+Epoch   9 Batch  350/538 - Train Accuracy: 0.9892, Validation Accuracy: 0.9775, Loss: 0.0095
+Epoch   9 Batch  400/538 - Train Accuracy: 0.9967, Validation Accuracy: 0.9828, Loss: 0.0075
+Epoch   9 Batch  450/538 - Train Accuracy: 0.9764, Validation Accuracy: 0.9842, Loss: 0.0149
+Epoch   9 Batch  500/538 - Train Accuracy: 0.9927, Validation Accuracy: 0.9794, Loss: 0.0073
 Model Trained and Saved
 </pre>
 </div>
@@ -13026,7 +13056,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13051,7 +13081,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13089,7 +13119,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sentence_to_seq</span><span class="p">(</span><span class="n">sentence</span><span class="p">,</span> <span class="n">vocab_to_int</span><span class="p">):</span>
@@ -13143,7 +13173,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">translate_sentence</span> <span class="o">=</span> <span class="s1">&#39;he saw a old yellow truck .&#39;</span>
@@ -13196,12 +13226,12 @@ Model Trained and Saved
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>INFO:tensorflow:Restoring parameters from checkpoints/dev
 Input
-  Word Ids:      [146, 25, 117, 135, 123, 45, 94]
+  Word Ids:      [63, 94, 33, 77, 201, 203, 156]
   English Words: [&#39;he&#39;, &#39;saw&#39;, &#39;a&#39;, &#39;old&#39;, &#39;yellow&#39;, &#39;truck&#39;, &#39;.&#39;]
 
 Prediction
-  Word Ids:      [301, 353, 304, 119, 117, 227, 202, 174, 336, 194, 1]
-  French Words: a était votre , mais il est le plus aimé. &lt;EOS&gt;
+  Word Ids:      [87, 96, 182, 342, 294, 155, 86, 229, 1]
+  French Words: il a vu un vieux camion jaune . &lt;EOS&gt;
 </pre>
 </div>
 </div>
